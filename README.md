@@ -1,18 +1,25 @@
-# Portfolio profesional
+# Portafolio web - Enrique Pupe
 
-Pagina web estatica tipo CV virtual, lista para publicarse en Netlify desde GitHub.
+CV virtual y portafolio profesional de Enrique Valentino Pupe Guerrero, estudiante de Ingenieria de Sistemas en UNTELS.
+
+## Contenido
+
+- Perfil profesional como estudiante de 4to ciclo.
+- Proyectos publicados: 4DMK y PopCorn Premium.
+- Habilidades tecnicas y personales.
+- Formacion academica.
+- Contacto publico y descarga de CV.
+
+## Publicacion
+
+Proyecto listo para Netlify.
+
+- Build command: dejar vacio.
+- Publish directory: `.`
 
 ## Archivos principales
 
-- `index.html`: estructura y contenido editable.
+- `index.html`: contenido de la pagina.
 - `styles.css`: diseno visual responsive.
 - `script.js`: menu movil, iconos y boton para volver arriba.
-- `assets/portfolio-workspace.png`: imagen temporal del portfolio.
-- `preguntas_portafolio.md`: informacion pendiente para personalizar la pagina.
-
-## Siguientes reemplazos
-
-1. Cambiar `Tu Nombre Apellido` por tu nombre real.
-2. Actualizar cargo, resumen, experiencia, habilidades y proyectos.
-3. Reemplazar los enlaces de correo, LinkedIn y GitHub.
-4. Cambiar la imagen temporal por una foto tuya o una imagen final de marca personal.
+- `assets/`: imagenes, capturas de proyectos y CV PDF.

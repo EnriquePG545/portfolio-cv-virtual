@@ -194,7 +194,7 @@ h1 {
   max-width: 760px;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3rem, 8vw, 6.7rem);
+  font-size: clamp(2.8rem, 7vw, 5.9rem);
   font-weight: 500;
   line-height: 0.95;
 }
@@ -335,7 +335,7 @@ h1 {
 }
 
 .profile-band,
-.projects-band,
+.timeline-band,
 .contact-band {
   padding: 86px 0;
 }
@@ -379,7 +379,8 @@ h1 {
 }
 
 .split-section,
-.skills-section {
+.skills-section,
+.projects-section {
   padding: 86px 0;
 }
 
@@ -420,7 +421,7 @@ h1 {
   color: var(--muted);
 }
 
-.projects-band {
+.timeline-band {
   background: #ecefed;
 }
 
@@ -441,6 +442,90 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.case-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 16px 42px rgba(22, 24, 25, 0.08);
+}
+
+.case-cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
+
+.case-body {
+  display: grid;
+  align-content: start;
+  padding: 24px;
+}
+
+.case-card .project-topline {
+  margin-bottom: 20px;
+}
+
+.case-card h3 {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.case-preview {
+  overflow: hidden;
+  margin-top: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f2f4f3;
+}
+
+.case-preview img {
+  width: 100%;
+  aspect-ratio: 16 / 8.5;
+  object-fit: cover;
+  object-position: top;
+}
+
+.case-actions {
+  display: flex;
+  margin-top: 24px;
+}
+
+.dark-case {
+  background: var(--surface-strong);
+  color: var(--surface);
+}
+
+.dark-case .case-cover,
+.dark-case .case-preview {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.dark-case .case-preview {
+  background: #232829;
+}
+
+.dark-case p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.dark-case .project-topline,
+.dark-case .text-link {
+  color: #7be0d7;
+}
+
+.dark-case .tag-row span {
+  border-color: rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .project-card {
@@ -671,6 +756,7 @@ h1 {
     min-height: 430px;
   }
 
+  .case-grid,
   .project-grid,
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -699,6 +785,7 @@ h1 {
     width: 100%;
   }
 
+  .case-grid,
   .metrics,
   .project-grid,
   .skills-grid {
@@ -714,10 +801,11 @@ h1 {
   }
 
   .profile-band,
-  .projects-band,
+  .timeline-band,
   .contact-band,
   .split-section,
-  .skills-section {
+  .skills-section,
+  .projects-section {
     padding: 58px 0;
   }
 
